@@ -26,6 +26,7 @@
 	</properties>
 
 	<distributionManagement>
+<<<<<<< HEAD
     	    <snapshotRepository>
 	        	<id>snapshots</id>
 	        	<name>snapshots</name>
@@ -38,6 +39,18 @@
         	<url>http://15.206.123.75:8081/artifactory/libs-release-local</url>
     	   </repository>
 	
+=======
+		<repository>
+			<id>central</id>
+			<name>releases</name>
+			<url>http://15.206.123.75:8081/artifactory/libs-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshot</id>
+			<name>snapshots</name>
+			<url>http://15.206.123.75:8081/artifactory/libs-snapshot-local</url>
+		</snapshotRepository>
+>>>>>>> 50976e992b38157e18dc7ad44ba541b5097a2928
 	</distributionManagement>
 
 	<scm>
