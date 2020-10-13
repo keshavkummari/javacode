@@ -37,6 +37,20 @@
 		<tag>HEAD</tag>
 	</scm>
 
+<distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ip-172-31-0-202-snapshots</name>
+        <url>http://34.233.71.11:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+    <repository>
+        <id>central</id>
+        <name>ip-172-31-0-202-releases</name>
+        <url>http://34.233.71.11:8081/artifactory/libs-release-local</url>
+    </repository>
+</distributionManagement>
+	
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
