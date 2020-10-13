@@ -6,12 +6,13 @@ phases:
       java: corretto8
     commands:
       # Upgrade AWS CLI to the latest version
-      - pip install --upgrade awscli
+      # - pip install --upgrade awscli
   pre_build:
     commands:
-      - mvn clean compile test
+      - mvn clean
   build:
     commands:
+      - mvn verify sonar:sonar
       - mvn package
   post_build:
     commands:
