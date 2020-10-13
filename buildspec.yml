@@ -10,9 +10,9 @@ phases:
   pre_build:
     commands:
       - mvn clean
+      - mvn verify sonar:sonar
   build:
     commands:
-      - mvn verify sonar:sonar
       - mvn package
   post_build:
     commands:
